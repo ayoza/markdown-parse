@@ -7,15 +7,17 @@ import java.util.ArrayList;
 public class MarkdownParse {
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
+        /*
         // find the next [, then find the ], then find the (, then take up to
         // the next )
-        int currentIndex = 0;
         String[] contentsArray = markdown.split("\n");
         for(String s: contentsArray){
             if(s.indexOf("!")!=0){
 
             }
         }
+        */
+        int currentIndex = 0;
         while(currentIndex < markdown.length()) {
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
