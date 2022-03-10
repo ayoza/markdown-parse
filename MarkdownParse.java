@@ -26,11 +26,6 @@ public class MarkdownParse {
             }
             currentIndex = closeParen + 1;
             links--;
-            /*System.out.println("Current " + currentIndex);
-            System.out.println("nextOpen " + nextOpenBracket);
-            System.out.println("nextClose " + nextCloseBracket);
-            System.out.println("openParen " + openParen);
-            System.out.println("closeParen " + closeParen);*/
         }
         
         return toReturn;
